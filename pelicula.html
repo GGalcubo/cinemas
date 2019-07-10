@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás - Selección de fecha, cine y horario</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+</head>
+
+<body id="pelicula" class="hidden-sn mdb-skin">
+
+  <!--Main Layout-->
+  <main class="sinHeader">
+    <div class="indicadorSeccion d-inline position-fixed pt-2 w-100 text-center">
+      <a role="button" href="home.html" class="btn btn-link btn-sm float-left"><span class="sr-only">Volver</span><i aria-hidden="true" class="fa fa-2x fa-chevron-left white-text"></i></a>
+      <a role="button" href="#" class="btn btn-link btn-sm float-right"><span class="sr-only">Cambiar ubicación</span><i aria-hidden="true" class="fa fa-2x fa-map-marker white-text"></i></a>
+      <h1 class="h4 h4-responsive card-title white-text">Camino Sinuoso</h1>
+      <!-- <h1 class="sr-only">Elegí la fecha, el cine y horario para ver la película elegida</h1> -->
+    </div>
+    <!-- Card Regular -->
+    <div class="card card-cascade z-depth-0">
+      <!-- Card image -->
+      <div class="view view-cascade overlay rounded-0">
+        <img class="card-img-top rounded-0" src="img/imagen-trailer.png" alt="" aria-hidden="true">
+        <p class="genero card-text white-text position-absolute w-100 text-center">Drama <span class="border px-2" aria-label="Apta para mayores de 16 años.">+16</span></p>
+        <div class="verTrailer position-absolute text-center w-100">
+          <button class="btn btn-link white-text p-0" data-toggle="modal" data-target="#modalYT"><img src="img/play-boton.png" alt=""><span class="sr-only">Ver trailer</span></button>
+        </div>
+        <div class="acercaPelicula mask rgba-black-strong d-flex align-items-center justify-content-center" style="">
+          <button class="btn btn-link white-text p-0" data-toggle="modal" data-target="#centralModalInfo"><i aria-hidden="true" class="fa fa-list white-text left"></i> <span class="white-text">Acerca de la película</span></button>
+        </div>
+      </div>
+
+      <!-- Card content -->
+      <div class="card-body card-body-cascade p-0">
+        <!-- Classic tabs -->
+        <div class="classic-tabs">
+          <ul class="nav nav-justified tabs-blue rounded-0" id="myClassicTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link waves-light px-3 active show" id="tabHoy" data-toggle="tab" href="#hoy" role="tab" aria-controls="hoy" aria-selected="true" aria-label="Hoy, 12 de diciembre">Hoy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light px-3" id="tabMañana" data-toggle="tab" href="#mañana" role="tab" aria-controls="mañana" aria-selected="false" aria-label="13 de diciembre">13/12</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light px-3" id="tabPasadoMañana" data-toggle="tab" href="#pasadoMañana" role="tab" aria-controls="pasadoMañana" aria-selected="false" aria-label="14 de diciembre">14/12</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-light px-3" id="tabOtroDia" data-toggle="tab" href="#otroDia" role="tab" aria-controls="otroDia" aria-selected="false" aria-label="15 de diciembre">15/12</a>
+            </li>
+          </ul>
+          <div class="tab-content p-0" id="myClassicTabContent">
+            <div class="tab-pane fade active show" id="hoy" role="tabpanel" aria-labelledby="tabHoy">
+              <div class="accordion md-accordion" id="accordion11" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading11">
+                    <a data-toggle="collapse" data-parent="#accordion11" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Hoyts Abasto <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse11" class="collapse show" role="tabpanel" aria-labelledby="heading11" data-parent="#accordion11">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i>Av. Corrientes 3200</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario111" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario111" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario112" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario112" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario113" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario113" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion12" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading12">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion12" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Cinemark Caballito<i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordion12">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. La Plata 96</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario121" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario121" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario122" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario122" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario123" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario123" aria-label="23 55 horas">23:55</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion13" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading13">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion13" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Village Caballito <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordion13">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. Rivadavia 5071</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario131" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario131" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario132" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario132" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario133" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario133" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion14" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading14">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion14" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Atlas Flores <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordion14">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Rivera Indarte 44</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario141" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario141" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario142" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario142" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario143" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario143" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="mañana" role="tabpanel" aria-labelledby="tabMañana">
+              <div class="accordion md-accordion" id="accordion21" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingOne21">
+                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Hoyts Abasto <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse21" class="collapse show" role="tabpanel" aria-labelledby="headingOne21" data-parent="#accordion21">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. Corrientes 3200</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario211" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario211" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario212" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario212" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario213" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario213" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion22" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading22">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion22" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Cinemark Caballito<i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse22" class="collapse" role="tabpanel" aria-labelledby="heading22" data-parent="#accordion22">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. La Plata 96</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario221" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario221" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario222" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario222" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario223" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario223" aria-label="23 55 horas">23:55</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion23" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading23">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion23" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Village Caballito <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse23" class="collapse" role="tabpanel" aria-labelledby="heading23" data-parent="#accordion23">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. Rivadavia 5071</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario231" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario231" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario232" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario232" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario233" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario233" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion24" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading24">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion24" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Atlas Flores <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse24" class="collapse" role="tabpanel" aria-labelledby="heading24" data-parent="#accordion24">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Rivera Indarte 44</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario241" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario241" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario242" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario242" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario243" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario243" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pasadoMañana" role="tabpanel" aria-labelledby="tabPasadoMañana">
+              <div class="accordion md-accordion" id="accordion31" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading31">
+                    <a data-toggle="collapse" data-parent="#accordion31" href="#collapse31" aria-expanded="true" aria-controls="collapse31">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Hoyts Abasto <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse31" class="collapse show" role="tabpanel" aria-labelledby="heading31" data-parent="#accordion31">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. Corrientes 3200</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario311" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario311" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario312" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario312" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario313" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario313" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion32" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading32">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion32" href="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Cinemark Caballito<i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse32" class="collapse" role="tabpanel" aria-labelledby="heading32" data-parent="#accordion32">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. La Plata 96</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario321" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario321" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario322" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario322" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario323" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario3" aria-label="23 55 horas">23:55</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion33" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading33">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion33" href="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Village Caballito <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse33" class="collapse" role="tabpanel" aria-labelledby="heading33" data-parent="#accordion33">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Av. Rivadavia 5071</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario331" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario331" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario332" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario332" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario333" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario333" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion md-accordion" id="accordion34" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="heading34">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion34" href="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                      <p class="mb-0 h5 font-weight-normal black-text">
+                        Atlas Flores <i aria-hidden="true" class="fa fa-angle-down rotate-icon"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <div id="collapse34" class="collapse" role="tabpanel" aria-labelledby="heading34" data-parent="#accordion34">
+                    <div class="card-body pt-0">
+                      <p class="mb-1 black-text"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Rivera Indarte 44</p>
+                      <span class="sr-only">Horarios disponibles:</span>
+                      <div class="text-center position-relative">
+                        <div class="d-inline">
+                          <input id="horario341" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario341" aria-label="18 30 horas">18:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario342" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario342" aria-label="20 30 horas">20:30</label>
+                        </div>
+                        <div class="d-inline">
+                          <input id="horario343" type="radio" name="horarios">
+                          <label class="label-button label-link label-blue label-sm font-weight-bold" for="horario343" aria-label="22 30 horas">22:30</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="otroDia" role="tabpanel" aria-labelledby="tabOtroDia">
+              <p class="p-3 m-0">En vez de la tab del 15/12, iría un datepicker.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <form id="botonFijo" action="login.html">
+      <div class="bg-light position-fixed w-100">
+        <!-- <p id="horarioElegido" class="text-center mb-0 mt-1 py-1 sr-only">Elegí fecha, cine y horario para continuar.</p> -->
+        <div class="m-auto w-75 py-3">
+          <button type="submit" class="btn btn-block btn-lg btn-dribbble continuar" disabled><span id="horarioElegido" class="sr-only">Elegí fecha, cine y horario para continuar.</span>Continuar</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <!--Main Layout-->
+  <!--Modal: modalYT-->
+  <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Body-->
+        <div class="modal-body mb-0 p-0">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OMvk5VV-ZsQ" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: modalYT-->
+
+  <!-- Central Modal Medium Info -->
+  <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">Camino Sinuoso</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="img/cartelera/pelicula.jpg" alt="">
+            <h1 class="text-left h4 h4-responsive mb-1 mt-3">Sinopsis</h1>
+            <p class="text-left mb-1">Mía Siero, una ex atleta olímpica es expulsada de una competición internacional por consumo de drogas no permitidas. Años después, y como consecuencia de esas sustancias en su cuerpo, sabrá que no puede tener hijos de forma natural. Esta noticia golpeará emocionalmente a Mía, al tiempo que se entera de que su padre está muriendo y deberá viajar a su ciudad natal para ordenar los trámites de herencia.</p>
+            <h2 class="text-left h4 h4-responsive mb-1">Director</h2>
+            <p class="text-left mb-1">Juan Pablo Kolodziej</p>
+            <h2 class="text-left h4 h4-responsive mb-1">Escritor</h2>
+            <p class="text-left mb-1">Juan Pablo Kolodziej</p>
+            <h2 class="text-left h4 h4-responsive mb-1">Actores</h2>
+            <p class="text-left mb-1">Geraldine Chaplin, Juana Viale, María Marull</p>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cerrar</a>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      var radios = $("input[type=radio][name=horarios]");
+      // radios.prop('checked', $(this).is(':checked'));
+      radios.on('click', function(){
+        if(radios.is(':checked')) {
+          $('button.continuar').attr('disabled', false);
+          $('#horarioElegido').html('Has elegido: hoy, Cinemark Caballito, 11:55 PM horas.');
+          setTimeout(function(){
+            $('button.continuar').focus()
+          }, 1500);
+        } else {
+          $('button.continuar').attr('disabled', true);
+          $('#horarioElegido').html('Elegí fecha, cine y horario para continuar.');
+        }
+
+      });
+
+      // radios.on('click', function(){
+      //   var $this = $(this);
+      //   var radioID = $this.attr('id');
+      //   if($this.is(':checked')) {
+      //     $this.siblings("label[for='"+radioID+"']").addClass('blue-gradient');
+      //   } else {
+      //     $this.siblings("label[for='"+radioID+"']").removeClass('blue-gradient');
+      //   }
+      // });
+
+      // $('.form-check-label').on('click', function(){
+      //   if($(this).children('input').is(':checked')){
+      //     $(this).children('input').attr('aria-checked', false);
+      //   } else {
+      //     $(this).children('input').attr('aria-checked', true);
+      //   }
+      //   // $(this).children('input').focus();
+      // })
+      // $(function () {
+      //     $(".sticky").sticky({
+      //         topSpacing: 0
+      //         , zIndex: 9
+      //         , stopper: 840
+      //         , startScrolling: 'top'
+      //         , stickyClass: 'bg-dark'
+      //     });
+      // });
+
+      // $('.tab-pane .accordion .card .card-header').on('click', function(){
+      //   var $this = $(this);
+      //   $this.children('a').attr('aria-expanded', true);
+      // })
+    });
+
+  </script>
+</body>
+
+</html>

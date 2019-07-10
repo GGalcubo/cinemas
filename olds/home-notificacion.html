@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+
+</head>
+
+<body class="hidden-sn mdb-skin">
+
+  <header>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><span class="sr-only">Desplegar menú</span><i aria-hidden="true" class="fa fa-bars"></i><img src="img/notificacion-1.png" alt="" style="position: absolute; left: 10px;"></a>
+      </div>
+      <div class="">
+        <img src="img/logotipo.png" alt="" height="38px">
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i aria-hidden="true" class="fa fa-lg fa-search"></i> <span class="sr-only">Buscar</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="slide-out" class="side-nav" style="background-color: darkslateblue;" tabindex="-1">
+      <ul class="custom-scrollbar">
+        <li>
+          <div class="logo-wrapper waves-light">
+            <a href="#" class="hide-text"><img src="img/logotipo.png" class="img-fluid flex-center" alt="">Cinemás</a>
+          </div>
+        </li>
+        <li>
+          <ul  style="border-bottom: 1px solid #DDDDDD;">
+            <li>
+              <a href="home.html" class="waves-effect white-text">Inicio</a>
+            </li>
+            <li>
+              <a href="beneficios.html" class="waves-effect white-text">Beneficios</a>
+            </li>
+            <li>
+              <a href="entradas.html" class="waves-effect white-text">Entradas <img src="img/notificacion-1.png" alt="" style="position: absolute; right: 30px; top: 18.5px;"></a>
+            </li>
+            <li>
+              <a href="favoritos.html" class="waves-effect white-text">Favoritos</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul style="border-bottom: 1px solid #DDDDDD;">
+            <li>
+              <a href="cuenta.html" class="waves-effect white-text">Cuenta</a>
+            </li>
+            <li>
+              <a href="salir.html" class="waves-effect white-text">Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="sidenav-bg mask-strong"></div>
+    </div>
+  </header>
+
+
+  <!--Main Layout-->
+  <main class="" style="padding-top: 46px;">
+    <h1 class="sr-only">Películas en cartelera</h1>
+    <!-- Classic tabs -->
+    <div class="classic-tabs">
+
+      <ul class="nav tabs-blue nav-justified rounded-0" id="myClassicTabOrange" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link waves-light px-3 active show" id="carteleraDeCine" data-toggle="tab" href="#cartelera" role="tab" aria-controls="cartelera" aria-selected="true">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light px-3" id="proximosEstrenos" data-toggle="tab" href="#proximamente" role="tab" aria-controls="proximamente" aria-selected="false">Proximamente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light px-3" id="cinesMasCercanos" data-toggle="tab" href="#cines" role="tab" aria-controls="cines" aria-selected="false">Cines</a>
+        </li>
+      </ul>
+
+      <div class="tab-content card z-depth-0" id="myClassicTabContentOrange">
+        <div class="tab-pane fade active show" id="cartelera" role="tabpanel" aria-labelledby="carteleraDeCine">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/bohemian.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Bohemian Rhapsody</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 400 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/alpha.jpeg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Alpha</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 250 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/lanoche.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>La noche de 12 años</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 250 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/elpotro.jpeg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>El Potro</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/grinch.jpeg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>El Grinch</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/mataromorir.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Matar o morir</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 220 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/caminosinuoso.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Camino Sinuoso</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/christopherrobin.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Christopher Robin</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 340 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section: Products v.1 -->
+            <!-- <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/bohemian.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text mb-1">Bohemian Rhapsody</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/alpha.jpeg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Alpha</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/lanoche.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">La noche de 12 años</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/elpotro.jpeg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">El potro</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/animalesfantasticos.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Los crímenes de Grindelwald</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/mataromorir.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Matar o morir</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/caminosinuoso.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Camino Sinuoso</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/christopherrobin.jpg" alt="Card image cap">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Christopher Robin</p>
+                    <p class="m-0"><i aria-hidden="true" class="fa fa-heart"></i><span> 400</span></p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="proximamente" role="tabpanel" aria-labelledby="proximosEstrenos">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/robinhood.jpeg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Robin Hood</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 300 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/hellfest.jpeg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Helfsest</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 250 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/elhombrequecomprolaluna.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>El hombre que compró la Luna</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 250 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/coldplay.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Cold Play: a head full of dreams</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/aquaman.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Aquaman</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 340 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/familiaalinstante.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Familia al instante</strong>
+                    </h4>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/demonio.jpg" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Demonio de medianoche</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 220 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-4 px-1">
+                <div class="card card-cascade overlay card-ecommerce" style="max-height: 350px; height: 100%;">
+                  <div class="view overlay" style="max-height: 235px !important; height: 100%;">
+                    <img src="img/cartelera/entrevistacondios.png" class="card-img-top" alt="">
+                    <a href="pelicula.html">
+                      <span class="sr-only">Elegir película</span>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body card-body-cascade text-center p-2" style="max-height: 150px;">
+                    <p class="card-title">
+                      <strong>Una entrevista con Dios</strong>
+                    </p>
+                    <ul class="rating">
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                      <li>
+                        <i aria-hidden="true" class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <div class="card-footer px-1">
+                      <span class="float-left font-weight-bold">
+                        <a href="#"><span class="sr-only">Compartir</span><i aria-hidden="true" class="fa fa-share-alt grey-text ml-3"></i></a>
+                      </span>
+                      <span class="float-right">
+                        <a href="#"><span class="sr-only">Me gusta</span><i aria-hidden="true" class="fa fa-heart ml-3"></i><b><span class="sr-only">A</span> 320 <span class="sr-only">personas les gusta esta película</span></b>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/robinhood.jpeg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Robin Hood</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/elhombrequecomprolaluna.jpg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">El hombre que compró la Luna</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/hellfest.jpeg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Helfest</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/coldplay.jpg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Cold Play: a head full of dreams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/familiaalinstante.jpg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Familia al instante</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/demonio.jpg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Demonio de medianoche</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/entrevistacondios.png" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Una entrevista con Dios</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-2">
+                <div class="card">
+                  <div class="view overlay">
+                    <img class="card-img-top" src="img/cartelera/aquaman.jpg" alt="Card image cap">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div class="card-body text-center">
+                    <p class="card-text">Aquaman</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="cines" role="tabpanel" aria-labelledby="cinesMasCercanos">
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Classic tabs -->
+  </main>
+  <!--Main Layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    // SideNav Button Initialization
+    $(".button-collapse").sideNav();
+    // SideNav Scrollbar Initialization
+    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      // $('#modalPush').modal('show');
+    });
+  </script>
+
+
+
+</body>
+
+</html>

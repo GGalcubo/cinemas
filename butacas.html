@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás - Selección de butacas</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+</head>
+
+<body class="hidden-sn mdb-skin">
+  <main id="butacas" class="sinHeader">
+    <div class="indicadorSeccion card rounded-0 position-fixed w-100 bg-primary white-text">
+      <div class="card-body text-center">
+        <a role="button" href="descuento.html" class="btn btn-link btn-sm position-fixed"><span class="sr-only">Volver</span><i aria-hidden="true" class="fa fa-2x fa-chevron-left white-text"></i></a>
+        <h1 class="h5 m-0">Seleccioná tus butacas</h1>
+      </div>
+    </div>
+    <div class="vistaButacas card rounded-0 border-0">
+      <div class="card-body text-center px-1">
+        <div class="pantalla position-absolute text-center">
+          <img src="img/pantalla-icon.png" alt="" width="100%">
+        </div>
+        <p class="m0">Pantalla</p>
+        <ul id="todas" class="list-inline">
+          <li class="list-inline-item">
+            <h2 class="sr-only">Filas de adelante</h2>
+            <ul id="adelante" class="list-inline mb-3" aria-label="Filas de adelante">
+              <li class="list inline-item">
+                <h3 class="sr-only">Primera fila</h3>
+                <ul id="primera-fila" class="list-inline mb-2" aria-label="Fila 'A'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">A</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca1" aria-label="Butaca 1">
+                      <label class="form-check-label" for="fila1butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca2" aria-label="Butaca 2">
+                      <label class="form-check-label" for="fila1butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca3" aria-label="Butaca 3" disabled>
+                      <label class="form-check-label" for="fila1butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca4" aria-label="Butaca 4">
+                      <label class="form-check-label" for="fila1butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca5" aria-label="Butaca 5" disabled>
+                      <label class="form-check-label" for="fila1butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca6" aria-label="Butaca 6" >
+                      <label class="form-check-label" for="fila1butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca7" aria-label="Butaca 7" >
+                      <label class="form-check-label" for="fila1butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca8" aria-label="Butaca 8" disabled>
+                      <label class="form-check-label" for="fila1butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila1butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila1butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+                <h3 class="sr-only">Segunda fila</h3>
+                <ul id="segunda-fila" class="list-inline mb-2" aria-label="Fila 'B'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">B</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca1" aria-label="Butaca 1" >
+                      <label class="form-check-label" for="fila2butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca2" aria-label="Butaca 2" >
+                      <label class="form-check-label" for="fila2butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca3" aria-label="Butaca 3" disabled>
+                      <label class="form-check-label" for="fila2butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca4" aria-label="butaca 4" disabled>
+                      <label class="form-check-label" for="fila2butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca5" aria-label="Butaca 5" disabled>
+                      <label class="form-check-label" for="fila2butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca6" aria-label="Butaca 6" >
+                      <label class="form-check-label" for="fila2butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca7" aria-label="Butaca 7" >
+                      <label class="form-check-label" for="fila2butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca8" aria-label="Butaca 8" disabled>
+                      <label class="form-check-label" for="fila2butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila2butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila2butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="sr-only">Filas del medio</h2>
+            <ul id="medio" class="list-inline mb-3" aria-label="Filas del medio">
+              <li class="list inline-item">
+                <h3 class="sr-only">Tercera fila</h3>
+                <ul id="tercera-fila" class="list-inline mb-2" aria-label="Fila 'C'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">C</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca1" aria-label="Butaca 1" disabled>
+                      <label class="form-check-label" for="fila3butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca2" aria-label="Butaca 2" disabled>
+                      <label class="form-check-label" for="fila3butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca3" aria-label="Butaca 3" disabled>
+                      <label class="form-check-label" for="fila3butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca4" aria-label="butaca 4" disabled>
+                      <label class="form-check-label" for="fila3butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca5" aria-label="Butaca 5" disabled>
+                      <label class="form-check-label" for="fila3butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca6" aria-label="Butaca 6" disabled>
+                      <label class="form-check-label" for="fila3butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca7" aria-label="Butaca 7" disabled>
+                      <label class="form-check-label" for="fila3butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca8" aria-label="Butaca 8" disabled>
+                      <label class="form-check-label" for="fila3butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila3butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila3butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+                <h3 class="sr-only">Cuarta fila</h3>
+                <ul id="cuarta-fila" class="list-inline mb-2" aria-label="Fila 'D'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">D</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca1" aria-label="Butaca 1" disabled>
+                      <label class="form-check-label" for="fila4butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca2" aria-label="Butaca 2" disabled>
+                      <label class="form-check-label" for="fila4butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca3" aria-label="Butaca 3" disabled>
+                      <label class="form-check-label" for="fila4butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca4" aria-label="butaca 4">
+                      <label class="form-check-label" for="fila4butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca5" aria-label="Butaca 5">
+                      <label class="form-check-label" for="fila4butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca6" aria-label="Butaca 6" disabled>
+                      <label class="form-check-label" for="fila4butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca7" aria-label="Butaca 7" disabled>
+                      <label class="form-check-label" for="fila4butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca8" aria-label="Butaca 8" disabled>
+                      <label class="form-check-label" for="fila4butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila4butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila4butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h2 class="sr-only">Filas de atrás</h2>
+            <ul id="atras" class="list-inline mb-3" aria-label="Filas de atrás">
+              <li class="list inline-item">
+                <h3 class="sr-only">Quinta fila</h3>
+                <ul id="quinta-fila" class="list-inline mb-2" aria-label="Fila 'E'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">E</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca1" aria-label="Butaca 1" disabled>
+                      <label class="form-check-label" for="fila5butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca2" aria-label="Butaca 2" disabled>
+                      <label class="form-check-label" for="fila5butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca3" aria-label="Butaca 3">
+                      <label class="form-check-label" for="fila5butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca4" aria-label="butaca 4" disabled>
+                      <label class="form-check-label" for="fila5butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca5" aria-label="Butaca 5">
+                      <label class="form-check-label" for="fila5butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca6" aria-label="Butaca 6" disabled>
+                      <label class="form-check-label" for="fila5butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca7" aria-label="Butaca 7" disabled>
+                      <label class="form-check-label" for="fila5butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca8" aria-label="Butaca 8">
+                      <label class="form-check-label" for="fila5butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila5butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila5butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+                <h3 class="sr-only">Sexta fila</h3>
+                <ul id="sexta-fila" class="list-inline mb-2" aria-label="Fila 'F'">
+                  <li class="list-inline-item mr-1" aria-hidden="true">F</li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca1" aria-label="Butaca 1">
+                      <label class="form-check-label" for="fila6butaca1" aria-hidden="true">1</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca2" aria-label="Butaca 2" disabled>
+                      <label class="form-check-label" for="fila6butaca2" aria-hidden="true">2</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca3" aria-label="Butaca 3" disabled>
+                      <label class="form-check-label" for="fila6butaca3" aria-hidden="true">3</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca4" aria-label="butaca 4" >
+                      <label class="form-check-label" for="fila6butaca4" aria-hidden="true">4</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca5" aria-label="Butaca 5" disabled>
+                      <label class="form-check-label" for="fila6butaca5" aria-hidden="true">5</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca6" aria-label="Butaca 6" >
+                      <label class="form-check-label" for="fila6butaca6" aria-hidden="true">6</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca7" aria-label="Butaca 7" disabled>
+                      <label class="form-check-label" for="fila6butaca7" aria-hidden="true">7</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca8" aria-label="Butaca 8" >
+                      <label class="form-check-label" for="fila6butaca8" aria-hidden="true">8</label>
+                    </div>
+                  </li>
+                  <li class="list-inline-item mr-1">
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" class="form-check-input filled-in" name="butacas" id="fila6butaca9" aria-label="Butaca 9" disabled>
+                      <label class="form-check-label" for="fila6butaca9" aria-hidden="true">9</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="leyenda" class="d-flex justify-content-around">
+      <div class="form-check form-check-inline m-0">
+        <input type="checkbox" class="form-check-input filled-in" id="disponibles" aria-hidden="true" readonly>
+        <label class="form-check-label" for="disponibles">Disponible</label>
+      </div>
+      <div class="form-check form-check-inline m-0">
+          <input type="checkbox" class="form-check-input filled-in" id="tusButacas" checked="true" aria-hidden="true" readonly disabled="true">
+          <label class="form-check-label" for="tusButacas">Tu butaca</label>
+      </div>
+      <div class="form-check form-check-inline m-0">
+          <input type="checkbox" class="form-check-input filled-in" id="reservadas" aria-hidden="true" disabled="true">
+          <label class="form-check-label" for="reservadas">Reservada</label>
+      </div>
+    </div>
+    <form id="botonFijo" action="candy.html">
+      <div class="bg-light position-fixed w-100">
+        <p class="text-center mb-0 mt-1 py-1 px-5 butacasElegidas d-none">No seleccionaste tus butacas.</p>
+        <!-- <p class="text-center mb-0 mt-1 py-1 px-5 hide butacasElegidas d-flex justify-content-between"><span class="font-weight-bold">Tus butacas</span><span class="pink-text font-weight-bold">D4 y D5</span></p> -->
+        <div class="m-auto w-75 py-3">
+          <button type="submit" class="btn btn-block btn-lg btn-dribbble continuar" disabled><span id="butacasElegidas" class="sr-only">Selecciona tus butacas para continuar.</span>Continuar</a>
+        </div>
+      </div>
+    </form>
+  </main>
+  <!--Main Layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+     $('input[name=butacas]').on('click', function(){
+      if( $('input[name=butacas]').is(':checked') ){
+        $('button.continuar').attr('disabled', false);
+        $('#butacasElegidas').html('Has seleccionado las butacas 4 y 5 de la fila D.')
+      } else {
+        $('button.continuar').attr('disabled', true);
+        $('#butacasElegidas').html('Selecciona tus butacas para continuar.')
+      }
+
+      var cant = $('input[name=butacas]:checked').length;
+      if (cant == 1 ){
+        $('.butacasElegidas').html('<span class="font-weight-bold">Tu butaca</span><span class="pink-text font-weight-bold">D4</span>').addClass('d-flex justify-content-between');
+      } else if( cant == 2 ){
+        $('.butacasElegidas').html('<span class="font-weight-bold">Tus butacas</span><span class="pink-text font-weight-bold">D4 y D5</span>');  
+        setTimeout(function(){
+          $('button.continuar').focus();
+        }, 1500);
+      }
+      
+     })
+    });
+  </script>
+</body>
+
+</html>

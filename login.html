@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás - Registro</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+</head>
+
+<body class="hidden-sn mdb-skin">
+  <!--Main Layout-->
+  <main id="login" class="sinHeader">
+    <div class="indicadorSeccion py-2 text-center">
+      <img src="img/logotipo.png" alt="" aria-hidden="true">
+    </div>
+
+    <form action="seleccion-entradas.html" class="text-center px-4 pt-4 pb-0 needs-validation" novalidate>
+        <h1 class="h6 mb-5 text-uppercase blue-text" aria-label="Regístrate y finaliza tu compra.">Registrate y finalizá tu compra</h1>
+        <p class="sr-only">Completa el formulario de registro, los tres campos son obligatorios. O bien, continúa loguéandote con Facebook.</p>
+        <small aria-hidden="true" class="d-block text-left text-black-50">Todos los campos son obligatorios</small>
+        <!-- Email -->
+        <div class="md-form input-group">
+          <label for="mail">Email</label>
+          <input type="email" id="mail" class="form-control mb-2" required>
+          <div class="invalid-feedback">
+            Ingresá un formato de email válido.
+          </div>
+        </div>
+        <!-- Password -->
+        <div class="md-form input-group">
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" class="form-control mb-2" required>
+          <div class="invalid-feedback">
+            Este campo es obligatorio.
+          </div>
+        </div>
+        <!-- RePassword -->
+        <div class="md-form input-group">
+          <label for="rePass">Confirmar contraseña</label>
+          <input type="password" id="rePass" class="form-control mb-2" required>
+          <div class="invalid-feedback">
+            Este campo es obligatorio.
+          </div>
+        </div>
+        <button class="btn btn-dribbble btn-block my-4" type="submit">Registrarme</button>
+      </form>
+
+        <hr class="divider" aria-hidden="true"></hr>
+        <!-- <p class="m-0">Continuar con:</p> -->
+      <form action="seleccion-entradas.html" class="text-center px-4 py-0">
+        <button type="submit" class="btn btn-fb btn-block" onclick=""><i aria-hidden="true" class="fa fa-facebook pr-1"></i> Continuar con Facebook</button>
+      </form>
+      <hr class="divider" aria-hidden="true"></hr>
+      <p class="m-0 text-center">¿Ya tenés una cuenta?
+          <a href="#" class="pink-text">Ingresar</a>
+      </p>
+
+  </main>
+  <!--Main Layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+
+</html>

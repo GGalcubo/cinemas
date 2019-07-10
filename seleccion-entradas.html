@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás - Selección de entradas</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+</head>
+
+<body class="hidden-sn mdb-skin">
+  <!--Main Layout-->
+  <main id="seleccionEntradas" class="sinHeader bg-light">
+    <div class="indicadorSeccion card rounded-0 position-fixed w-100 bg-primary white-text">
+      <div class="card-body text-center">
+        <a role="button" href="pelicula.html" class="btn btn-link btn-sm position-fixed"><span class="sr-only">Volver</span><i aria-hidden="true" class="fa fa-2x fa-chevron-left white-text"></i></a>
+        <h1 class="h5 m-0">Seleccioná tus entradas</h1>
+      </div>
+    </div>
+    <div class="resumenElegido card rounded-0 card-body pt-5 p-2 bg-light">
+      <p class="sr-only">Película, cine, fecha y horario elegidos:</p>
+      <p class="pl-2 h4 mb-1 mt-2">Camino Sinuoso</p>
+      <p class="pl-2 mb-1"><i aria-hidden="true" class="fa fa-map-marker"></i> Cinemark Caballito</p>
+      <p class="pl-2 mb-0"><span aria-label="12 de diciembre"><i aria-hidden="true" class="mr-1 fa fa-calendar"></i>12/12</span><span class="ml-3" aria-label="23 55 horas"><i aria-hidden="true" class="mr-1 fa fa-clock-o"></i> 23:55hs</span></p>
+    </div>
+    <h2 class="sr-only">Tipos de entradas</h2>
+    <div class="card rounded-0 border border-left-0 border-right-0 mb-4">
+      <div class="card-header bg-white border-0 pb-0 pt-2 px-3"><p class="h6 m-0">GENERAL</p></div>
+      <div class="card-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Entrada General <b aria-label="300 pesos">$300</b></p>
+              </div>
+              <div class="col-4">
+                <label for="entradaGeneral" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="entradaGeneral" id="entradaGeneral">
+                  <option value="0">0 entradas</option>
+                  <option value="1">1 entrada</option>
+                  <option value="2">2 entradas</option>
+                  <option value="3">3 entradas</option>
+                  <option value="4">4 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card rounded-0 border border-left-0 border-right-0 mb-4">
+      <div class="card-header bg-white border-0 pb-0 pt-2 px-3"><p class="h6 m-0">ENTRADAS 2x1</p></div>
+      <div class="card-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Banco Francés 2x1 <b aria-label="300 pesos">$300</b></p>
+                <p class="m-0"><small>Válido de Lunes a Domingos</small></p>
+              </div>
+              <div class="col-4">
+                <label for="bancoFrances" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="bancoFrances" id="bancoFrances">
+                  <option value="0">0 entradas</option>
+                  <option value="1">2 entradas</option>
+                  <option value="2">4 entradas</option>
+                  <option value="3">6 entradas</option>
+                  <option value="4">8 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Cencosud 2x1 <b aria-label="300 pesos">$300</b></p>
+                <p class="m-0"><small>Válido de Lunes a Domingos</small></p>
+              </div>
+              <div class="col-4">
+                <label for="cencosud" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="cencosud" id="cencosud">
+                  <option value="0">0 entradas</option>
+                  <option value="1">2 entradas</option>
+                  <option value="2">4 entradas</option>
+                  <option value="3">6 entradas</option>
+                  <option value="4">8 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Club La Nación 2x1 <b aria-label="300 pesos">$300</b></p>
+                <p class="m-0"><small>Válido de Lunes a Domingos</small></p>
+              </div>
+              <div class="col-4">
+                <label for="laNacion" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="laNacion" id="laNacion">
+                  <option value="0">0 entradas</option>
+                  <option value="1">2 entradas</option>
+                  <option value="2">4 entradas</option>
+                  <option value="3">6 entradas</option>
+                  <option value="4">8 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Clarín 365 2x1 <b aria-label="300 pesos">$300</b></p>
+                <p class="m-0"><small>Válido de Lunes a Domingos</small></p>
+              </div>
+              <div class="col-4">
+                <label for="clarin365" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="clarin365" id="clarin365">
+                  <option value="0">0 entradas</option>
+                  <option value="1">2 entradas</option>
+                  <option value="2">4 entradas</option>
+                  <option value="3">6 entradas</option>
+                  <option value="4">8 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card rounded-0 border border-left-0 border-right-0 mb-4">
+      <div class="card-header bg-white border-0 pb-0 pt-2 px-3"><strong>ENTRADAS ESPECIALES</strong></div>
+      <div class="card-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Menores hasta 12 años <b aria-label="235 pesos">$235</b></p>
+                <p class="m-0"><small>Deben ser acompañados por un mayor</small></p>
+              </div>
+              <div class="col-4">
+                <label for="menores" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="menores" id="menores">
+                  <option value="0">0 entradas</option>
+                  <option value="1">1 entrada</option>
+                  <option value="2">2 entradas</option>
+                  <option value="3">3 entradas</option>
+                  <option value="4">4 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Jubilados <b aria-label="235 pesos">$235</b></p>
+                <p class="m-0"><small>Acredita con su carnet</small></p>
+              </div>
+              <div class="col-4">
+                <label for="jubilado" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="jubilado" id="jubilado">
+                  <option value="0">0 entradas</option>
+                  <option value="1">1 entrada</option>
+                  <option value="2">2 entradas</option>
+                  <option value="3">3 entradas</option>
+                  <option value="4">4 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 px-3">
+            <div class="row">
+              <div class="col-8 pr-0">
+                <p class="m-0">Personas con capacidades especiales <b aria-label="235 pesos">$235</b></p>
+              </div>
+              <div class="col-4">
+                <label for="especiales" class="sr-only">Elegí la cantidad</label>
+                <select class="selectNativo" name="especiales" id="especiales">
+                  <option value="0">0 entradas</option>
+                  <option value="1">1 entrada</option>
+                  <option value="2">2 entradas</option>
+                  <option value="3">3 entradas</option>
+                  <option value="4">4 entradas</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card rounded-0 border border-left-0 border-right-0">
+      <div class="card-header bg-white border-0 pb-0 pt-2 px-3"><p class="h6 m-0">OTRAS PROMOCIONES</p></div>
+      <div class="card-body px-4 py-2">
+        <label for="otrasPromociones" class="sr-only">Seleccioná tu promoción</label>
+        <select class="selectNativo m-0" name="otrasPromociones" id="otrasPromociones">
+          <option value="0">Sin promoción</option>
+          <option value="1">Club Personal</option>
+          <option value="2">Club Claro</option>
+          <option value="3">Club Movistar</option>
+        </select>
+      </div>
+    </div>
+
+    <form id="botonFijo" action="descuento.html">
+      <div class="bg-light position-fixed w-100">
+        <p id="entradas" class="text-center mb-0 mt-1 py-1 sr-only">Seleccioná tus entradas para continuar.</p>
+        <div class="m-auto w-75 py-3">
+          <button type="submit" class="btn btn-block btn-lg btn-dribbble continuar" disabled>Continuar</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <!--Main Layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.mdb-select').materialSelect();
+      $('.select-wrapper span.caret').attr('aria-hidden', true);
+
+      var selects = $(".selectNativo");
+
+      selects.on('change', function(){
+        var value = $(this).val();
+        if( value == 0 ) {
+          $('button.continuar').attr('disabled', true);
+          $('#entradas').html('Seleccioná tus entradas para continuar.');
+        } else {
+          $('button.continuar').attr('disabled', false);
+          $('#entradas').html('Has seleccionado: Club La Nación dos por uno, 300 pesos.');
+        }
+      });
+    });
+
+    // // lets say element is the DOM element you want to scroll into view
+    // function scrollNow(element) {
+    //    // create a dummy element X pixels above 'element'
+    //    // where X is the height of your bottom menu
+    //    // if X is not known in advance, calculate it using $('#menu').outerHeight()
+    //    var dummy = $('<div></div>').css({
+    //       position: 'absolute', top: $(element).offset().top - 86
+    //    }).appendTo('body');
+    //    dummy[0].scrollIntoView();
+    //    dummy.remove(); // remove the dummy element
+    // }
+
+    // /* This function finds an element's position relative to the top of the viewable area */
+    // function findPosFromTop(node) {
+    //     var curtop = 0;
+    //     var curtopscroll = 0;
+    //     if (node.offsetParent) {
+    //         do {
+    //             curtop += node.offsetTop;
+    //             curtopscroll = window.scrollY;
+    //         } while (node = node.offsetParent);
+
+
+    //     }
+    //     return (curtop - curtopscroll);
+    // }
+
+    // /* This function scrolls the page to ensure that elements are
+    //    always in the viewable area */
+    // function scrollScreenArea(el)
+    // {
+
+    //     var topOffset       = 60; //reserved space (in px) for header
+    //     var bottomOffset    = 300;  //amount of space to leave at bottom
+    //     var position        = findPosFromTop(el);
+    //     //if hidden beneath header, scroll into view
+    //     if (position < topOffset)
+    //     {
+    //         // to scroll up use a negative number
+    //         scrollTo(el.offsetLeft,position-topOffset);
+    //     }
+    //     //if too close to bottom of view screen, scroll into view
+    //     else if ((position + bottomOffset) > window.innerHeight)
+    //     {
+    //         scrollTo(0,window.scrollY+bottomOffset);
+    //     }
+    // }
+  </script>
+</body>
+
+</html>

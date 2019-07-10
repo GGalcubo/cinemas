@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CineMás - Mis Entradas</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+
+</head>
+
+<body class="hidden-sn mdb-skin">
+
+  <header>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav z-depth-0">
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><span class="sr-only">Desplegar menú</span><i aria-hidden="true" class="fa fa-bars"></i></a>
+      </div>
+      <div class="">
+        <h1 class="h5 h5-responsive m-0"><span class="sr-only">Menú</span>Mis entradas</h1>
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i aria-hidden="true" class="fa fa-lg fa-search"></i> <span class="sr-only">Buscar</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="slide-out" class="side-nav d-none" tabindex="-1">
+      <ul class="custom-scrollbar">
+        <li>
+          <div class="logo-wrapper waves-light">
+            <img src="img/logotipo.png" class="img-fluid flex-center" alt="Logo Cinemás">
+          </div>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <a href="home.html" class="waves-effect white-text">Inicio</a>
+            </li>
+            <li>
+              <a href="not-found.html" class="waves-effect white-text">Beneficios</a>
+            </li>
+            <li>
+              <a href="entradas.html" class="waves-effect white-text">Entradas</a>
+            </li>
+            <li>
+              <a href="not-found.html" class="waves-effect white-text">Favoritos</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <a href="not-found.html" class="waves-effect white-text">Cuenta</a>
+            </li>
+            <li>
+              <a href="not-found.html" class="waves-effect white-text">Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="accesibilidad.html" class="waves-effect white-text position-absolute w-100">Accesibilidad</a>
+      <div class="sidenav-bg mask-strong"></div>
+    </div>
+  </header>
+
+  <!--Main Layout-->
+  <main id="entradas" class="">
+    <div class="classic-tabs">
+      <ul class="nav nav-justified tabs-blue rounded-0" id="myClassicTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link  waves-light active show" id="tabEntradasDisponibles" data-toggle="tab" href="#entradasDisponibles" role="tab" aria-controls="entradasDisponibles" aria-selected="true">Entradas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" id="tabHistorialEntradas" data-toggle="tab" href="#historialEntradas" role="tab" aria-controls="historialEntradas" aria-selected="false">Historial</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myClassicTabContent">
+        <div class="tab-pane fade active show" id="entradasDisponibles" role="tabpanel" aria-labelledby="tabEntradasDisponibles">
+          <div class="card card-body z-depth-1 border-0">
+            <div class="media">
+              <img class="align-self-center mr-3" src="img/cartelera/caminosinuoso.png"
+                alt="" width="30%">
+              <div class="w-100">
+                <p class="h6 text-uppercase mb-2">Camino Sinuoso</p>
+                <p class="mb-2"><i aria-hidden="true" class="fa fa-map-marker mr-2"></i> Cinemark Caballito</p>
+                <p class="mb-2"><i aria-hidden="true" class="fa fa-calendar mr-2"></i>12/12/2018</p>
+                <p class="mb-2"><i aria-hidden="true" class="fa fa-clock-o mr-2"></i><span aria-label="23 55 horas"> 23:55hs</span></p>
+                <p class="mb-0"><a href="codigo-qr.html" class="text-uppercase">Ver mis entradas</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="historialEntradas" role="tabpanel" aria-labelledby="tabHistorialEntradas">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quibusdam quae facere, reiciendis dolore assumenda maiores nihil repellendus aperiam sapiente omnis, fugiat rem voluptate rerum et. Reprehenderit ut, totam voluptatibus.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Main Layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    // SideNav Button Initialization
+    $(".button-collapse").sideNav();
+    // SideNav Scrollbar Initialization
+    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
+
+    $(document).ready(function() {
+      //Muestra el menú
+      $(".button-collapse").on('click', function(){
+        $('#slide-out').removeClass('d-none');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
